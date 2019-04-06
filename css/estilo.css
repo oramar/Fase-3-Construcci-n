@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(0, 88, 131)
+}
 nav li{
     display: inline-block;
     text-align: center;
