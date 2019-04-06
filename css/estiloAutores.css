@@ -1,3 +1,7 @@
 body{
     background-color: rgb(0, 88, 131)
 }
+section{
+    border: black 2px solid;
+    border-radius: 8px;
+}
