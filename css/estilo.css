@@ -1,12 +1,21 @@
 body{
-    background-color: rgb(0, 88, 131);
     
+    background-color: rgb(0, 88, 131);
+}
+
+#Contenido{
+width: 85%;
+height: auto;
+margin: auto;
+position: relative;
+background-color: white;
+border-radius: 5px;
 }
 
   h1{
     
     text-align: center;
-    color: white;
+    color: rgb(165, 16, 16);
   }
   #Menu{
     text-align: center;
@@ -29,7 +38,35 @@ body{
     text-decoration: none;
     display: block;
     padding: 15px;
+    border-radius: 10px;
   }
   #Menu ul li a:hover{
     background-color: green;
+    color: blueviolet;
+    text-decoration: none;
+  }
+
+  #Menu ul li a:link{
+   
+    color: red;
+    text-decoration: none;
+  }
+
+  #Menu ul li a:visited{
+   
+    color: rgb(0, 255, 42);
+    text-decoration: none;
+  }
+
+  #Menu ul li a:active{
+   
+    color: black;
+    text-decoration: none;
+  }
+  #titulo{
+    display: block;
+    
+  }
+  img{
+  
   }
