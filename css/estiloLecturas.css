@@ -1,3 +1,86 @@
 body{
-    background-color: rgb(0, 88, 131)
+    
+    background-color: rgb(0, 88, 131);
 }
+
+#Contenido{
+width: 85%;
+height: auto;
+margin: auto;
+position: relative;
+background-color: white;
+border-radius: 5px;
+padding: 2%;
+}
+
+p{
+    text-align: justify;
+    padding-left: 10px;
+}
+
+
+
+  h1{
+    
+    text-align: center;
+    color: rgb(165, 16, 16);
+  }
+  #Menu{
+    text-align: center;
+    background-color: black;
+  }
+  
+  #Menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #Menu ul li{
+    display: inline-block;
+    text-align: center;
+  }
+
+  #Menu ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  #Menu ul li a:hover{
+    background-color: green;
+    color: blueviolet;
+    text-decoration: none;
+  }
+
+  #Menu ul li a:link{
+   
+    color: red;
+    text-decoration: none;
+  }
+
+  #Menu ul li a:visited{
+   
+    color: rgb(0, 255, 42);
+    text-decoration: none;
+  }
+
+  #Menu ul li a:active{
+   
+    color: black;
+    text-decoration: none;
+  }
+  #titulo{
+    display: block;
+    
+  }
+  dt {
+    font-weight: bold;
+    padding-left: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+ }
+ dd {
+    margin-left: 2em;
+ }
