@@ -12,6 +12,13 @@ background-color: white;
 border-radius: 5px;
 }
 
+
+p{
+  text-align: justify;
+  padding-left: 10px;
+}
+
+
   h1{
     
     text-align: center;
@@ -65,6 +72,6 @@ border-radius: 5px;
   }
   #titulo{
     display: block;
-    
+    float: none;
   }
   

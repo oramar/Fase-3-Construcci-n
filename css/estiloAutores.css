@@ -1,10 +1,8 @@
-body{
-    background-color: rgb(0, 88, 131);
-    text-align: center;
 
-}
 
-section{
+
+
+  section{
     border: black 2px solid;
     border-radius: 8px;
     padding: 15px;
@@ -16,22 +14,25 @@ section{
 
 }
 section img{
-	align: center;
+	align-content: center;
 }
-img{
+.AUTOR{
 	width: 250px;
     height: 350px;
     border-radius: 15px;
     display:block;
 	margin:auto;
 }
-h1{
-    text-align: center;
-    font-size: 40x;
-    color: white;
+
+H2{
+    font-size: 2REM;
 }
 
-ul{
-    text-align: left;
-    list-style: none;
+section UL LI{
+    font-size: 1.5rem;
+}
+section{
+    width: 27rem;
+   
+    
 }
