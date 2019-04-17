@@ -1,152 +1,423 @@
 /*Estilos generales Documento*/
 *{
-    margin: 0;
-    padding: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: rgb(0, 88, 131);
+  font-family: sans-serif;
+
+}
+#Contenido{
+  width: 90%;
+  height: auto;
+  background-color: white;
+  margin: 10px auto 0px;
+  border-radius: 5px;
+  border-radius: 5px;
   
-  }
+}
 
+/* Configuracion del logo y el parrafo del encabesado */
 
-html {
-    min-height: 100%;
-    position: relative;
-  }
-  body{
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.logo >img{
+  width: 50rem;
+}
+
+.parrafoLogo{
+  padding-right: 5%;
+  color: rgba(0,0,0,1);
+  font-size: 2.7rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#titulo > h1{
       
-    background-color: rgb(0, 88, 131);
-  }
-  
-  
-  #Contenido{
-    width: 92%;
-    height: auto;
-    margin: 10px auto;
-    position: relative;
-    background-color: white;
-    border-radius: 5px;
-    font-size: 2rem;
-    }
-  
+  text-align: center;
+  color: slateblue;
+   margin-top: 1px auto;    
+   margin-bottom: 2rem;
+   font-size: 5rem;
+       
    
-    /*Estilos generales Encabezado*/
-  #logoUniversidad{
-    float: left;
   }
 
-  #titulo{
-    display: block;
-    
-    padding: 3px;
-  }
+  #ContenidoGeneral p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 27px;
+    text-indent: 50px;
+    padding: 5px 10px;
+  } 
 
-  #titulo > p{
-    font-size: 2rem;  
-    margin-top: 2.7rem;
-    text-align: center;
-    font-weight: bold;
-  }
+/* configuracion del menu principal */
 
-  #titulo > h1{
-      
-    text-align: center;
-      color: rgb(165, 16, 16);
-     margin-top: 1px auto;    
-     margin-bottom: 1px;
-         
-     
-    }
+.navegacion ul{
+  list-style: none;
+  display: flex;
+  background: #333333;
+  flex: auto;
+  margin-bottom: 2px;
+}
+.menu > li{
   
+  display: flex;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 25px;
+  border-right: 2px solid rgba(0,0,0,.2);
+  transition: all .5s;
+  flex: auto;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  }
+
+  /* para darle formato al ultimo li */
+ .menu li:last-child{
+  border-right: none;
+  }
+  .menu >li:hover{
+    background-color: green;
     
-    p{
-        text-align: justify;
-        padding: 2px 3rem;
-        
-    }
+  }
+
+  .menu >li:hover .subMenu{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all .6s;
+    
+  }
+
+  .menu a:hover{
+    color: blueviolet;       
+      
+  }
+
+.menu a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(0, 255, 42); 
+  display: block;
+}
+
+.menu >li>a img{
+  float: right;
+  position: relative;
+  margin-right: 0;    
+  
+}
+
+/* configuracion del submenu */
+.subMenu{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;    
+  transform: translateX(60%);
+  opacity: 0;
+  transition: all .6s;
+  
+  
+}
+
+.subMenu >li{
+  display: block;
+ width: 150%; 
+ background-color:  #222;
+ /* display: block; */
+  overflow: hidden;
+  text-align: left;
+  padding: 12px 25px;
+  border-top: 2px solid rgba(0,0,0,.1);
+  cursor: pointer;
+}
+
+.subMenu >li:hover{  
+  background-color: green;
+  display: block;
+}
 
 
-    /*estilos generales botones navegacion*/
-    .navegacion{
-        text-align: center;
-      }
-      .navegacion ul{
-        /*Quitamos las biñetas*/
-        list-style: none;
-        padding: 0px;
-        
-      }
-      /*
-      .navegacion li ul{
-      display: none;
-      }
-      
-      .menu li:hover > ul{
-        display: block;
-      }
-      */
-      .navegacion li{
-        line-height: 3rem;
-        position: relative;
-      }
-      
-      .navegacion li ul{
-        position: absolute;
-      }
-      
-      
-      .navegacion a{
-        text-decoration: none;
-        color: rgb(0, 255, 42);
-        display: block;
-        padding: 0 2em;
-        transition: .4s;
-        
-      }
-      
-      .navegacion a:hover{
-        background-color: green;
-        color: blueviolet;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: all .3s;
-      }
-      
-      
-      /*primer nivel*/
-      
-      .menu{
-        display: table;
-        background: #333333;
-        width: 100%;
-        margin: 10px auto;
-        border-radius: 5px;
-        text-align: left;
-      }
-      
-      .menu  >li{
-        float: left;
-      
-      }
-      
-      /*segundo nivel*/
-      
-      .menu li li{
-        background: #222;
-        width: 450px;
-        max-height: 0;
-        overflow: hidden;
-        transition: all .6s;
-      }
-      
-      .menu li:hover >ul> li{
-        max-height: 500px;  
-        overflow: visible;
-      }
-      
-      .menu >li > ul{
-        top:100%;
-      }
-      /*tercer nivel*/
-      
-      .menu ul ul{
-        left: 100%;
-        top: 0;
-      }
+
+.subMenu >li> a img{
+  float: right;
+  position: relative;
+  margin-right: 0;  
+  margin-left: 10px;
+    
+}
+
+
+
+/* configurar el sub sub menu */
+
+.subSubMenu{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 166%;
+  top: 0;  
+  background-color: #222; 
+  transform: translateX(-60%);
+  opacity: 0;
+  transition: all .6s;
+  
+}
+.subSubMenu > li{
+  width: 200%; 
+  background-color:  #222;  
+   overflow: hidden;
+   text-align: left;
+   padding: 12px 25px;
+   border-bottom: 2px solid rgba(0,0,0,.2);
+   cursor: pointer;
+ 
+ 
+}
+
+.subSubMenu >li:hover{
+  background-color: rgba(0,0,0,.2);
+  background-color: green;
+}
+
+.subMenu >li:hover .subSubMenu{
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all .6s;
+  
+}
+
+/* estilos del footer */
+
+.info-container {
+	width: 100%;
+	background: #f2f2f2;
+  font-family: Raleway;
+  margin-top: 70px;
+}
+
+.info-main {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-main h3 {
+	color: #00C6EE;
+	font-size: 40px;
+	text-align: center;
+}
+
+.info-main p {
+  padding: 20px 30%;
+  text-align: justify;
+}
+
+
+.info-main a {
+  display: inline-block; 
+  background-color:  #222;
+  width: 20%;
+  padding: 15px 15px;
+  text-align: center;
+  margin: 0px auto 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  color: rgb(0, 255, 42); 
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+
+.info-main a:hover{
+  background-color: green;
+  color: blueviolet;  
+  transition: all .6s;
+}
+
+
+
+footer {
+	width: 100%;
+  font-family: Raleway;
+  padding: 0%;
+  
+}
+
+.footer-container {
+	width: 100%;
+	background: #272727;
+  color: #fff;
+  
+  
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 5%;
+
+}
+
+.footer-main .footer-columna {
+	width: calc(100% / 3);
+  text-align: justify;
+  margin: 15px 30px;
+  padding: 50px 2px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.footer-main .footer-columna:nth-child(2) {
+	padding: 15 30px;
+}
+
+.footer-main .footer-columna h3 {
+	font-size: 32px;
+	color: #00C6EE;
+	margin-bottom: 20px;
+}
+
+.footer-main .footer-columna input[type="email"] {
+	border: none;
+	width: 75%;
+	border: 1px solid #00C6EE;
+	font-size: 14px;
+	padding: 10px;
+	font-family: Raleway;
+}
+
+.footer-main .footer-columna input[type="submit"] {
+	border: none;
+	background: #00C6EE;
+	color: #fff;
+	padding: 10px 40px;
+	font-size: 18px;
+	margin-top: 10px;
+	cursor: pointer;
+  font-family: Raleway;
+  width: 50%;
+  border-radius: 7%;
+}
+
+.footer-main .footer-columna span p {
+	display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	font-family: Raleway;
+}
+
+.footer-copy-redes {
+	width: 100%;
+	background: #000;
+	border-top: 3px solid #fff;
+}
+
+.main-copy-redes {
+	width: 98%;
+	max-width: 1000px;
+	padding: 15px 0;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.main-copy-redes .footer-copy {
+	width: 70%;
+	color: #fff;
+}
+
+.main-copy-redes .footer-redes {
+	width: 30%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.main-copy-redes .footer-redes a {
+	display: inline-block;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius:50%;
+	background: #fff;
+	color: #000;
+	text-align: center;
+}
+
+@media screen  and (max-width: 750px) {
+	.info-main {
+		padding: 30px 100px;
+	}
+
+	.footer-main .footer-columna {
+		padding: 0 10px;
+	}
+
+	.footer-main .footer-columna h3 {
+		font-size: 28px;
+	}
+
+	.footer-main .footer-columna p {
+		font-size: 14px;
+	}
+}
+
+@media screen  and (max-width: 640px) {
+	.info-main {
+		padding: 30px 30px;
+	}
+
+	.info-main h3 {
+		font-size: 30px;
+	}
+
+	.footer-main {
+		padding: 10px 0;
+	}
+
+	.footer-main .footer-columna {
+		width: 100%;
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.footer-main .footer-columna h3 {
+		margin-bottom: 5px;
+	}
+
+	.footer-main .footer-columna span {
+		display: block;
+	}
+	
+	.main-copy-redes .footer-copy {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.main-copy-redes .footer-redes {
+		width: 80%;
+		margin: auto;
+	}
+
+}

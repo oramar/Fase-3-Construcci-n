@@ -2,37 +2,46 @@
 
 
 
-  section{
+  #autores > section{
     border: black 2px solid;
     border-radius: 8px;
-    padding: 15px;
-    display: inline-block;
-    margin: 10px;
+    padding: 15px;    
+    margin: 5px;
     background-color: whitesmoke;
     box-shadow: 0 0 20px #4f9;
-	
+    width: 22rem;
+
 
 }
-section img{
-	align-content: center;
+section > img{
+  align-content: center; 
+  border-radius: 6px;
 }
 .AUTOR{
 	width: 250px;
     height: 350px;
     border-radius: 15px;
     display:block;
-	margin:auto;
+	margin:10px auto;
 }
 
-H2{
-    font-size: 2REM;
+#autores H2{
+    font-size: 1.5REM;
+    text-align: center;
+}
+
+#autores li{
+  font-size: 1.2rem;
 }
 
 section UL LI{
     font-size: 1.5rem;
+    list-style: none;
 }
-section{
-    width: 27rem;
-   
-    
+
+
+#autores{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }

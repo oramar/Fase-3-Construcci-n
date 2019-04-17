@@ -9,48 +9,116 @@
     <script type ="text/javascript" src="js/prefixfree.min.js"></script>
     <script type ="text/javascript" src="js/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilosGenerales.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <meta description =""/>
     
     <title>Document</title>
 </head>
 <body>
 
-    <div id="Contenido">
-            <header id="titulo">
-                    <img src="img/logoUNAD.png" width="400px">
-                    <h1>Ovi en formato Web con Html5 y CSS3 </h1>
+        <div id="Contenido">
+                <header id="titulo">
+                        <div class="logo">
+                                        <img id="logoUniversidad" src="img/logoUNAD.png" alt="Logo de universidad">
+                                        <p class="parrafoLogo">Concepto Básico De Seguridad Informática</p>
+                        </div>
+                        
+                        
+                        <!-- <input type="checkbox" id="botonMenu">
+                        <label for="botonMenu"><img src="img/iconoMenu.png" alt="Icono del Menu"></label> -->
+                   <nav class="navegacion" >
+                        <ul class="menu">
+                                <li ><a href="#">Inicio</a></li>
+                                
+                                <li><a href="Secciones/Lecturas/Lecturas.html">Lecturas </a></li>                          
+                             
+                                <li><a href="Secciones/Multimedia/Multimedia.html">Multimedia</a></li>
+                                <li><a href="Secciones/Actividades/Actividades.html">Actividades</a></li>
+                                <li><a href="Secciones/Autores/Autores.html">Autores</a></li>
+                            </ul>
+                            </nav>
+                            <h1>Bienvenidos</h1>
+        
                            
-                    
                 </header>
-                <nav id="Menu">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="Secciones/Lecturas/Lecturas.html">Lecturas</a></li>
-                        <li><a href="Secciones/Multimedia/Multimedia.html">Multimedia</a></li>
-                        <li><a href="Secciones/Actividades/Actividades.html">Actividades</a></li>
-                        <li><a href="Secciones/Autores/Autores.html">Autores</a></li>
-                    </ul>
-                </nav>
+
+                <section id="ContinidoGeneral">
+                        <section>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus nulla maxime recusandae debitis id porro similique est perspiciatis itaque odio. Quia, illo sit voluptate exercitationem autem modi repudiandae adipisci amet.</p>
+                        </section>
             
-                <section>
-                    <section>
-                        <header>
-                            <h2>Objetivos del Ovi</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique eveniet, culpa eaque iure eum blanditiis, vel quam eligendi atque laborum ratione quae! Laboriosam voluptates ratione delectus rerum, amet perspiciatis itaque.
-            
-                            </p>
-                            
-                        </header>
-                    </section>
-            
+                        <aside>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla minima atque autem rem doloremque quam consequatur quos maiores? Adipisci eveniet consequatur qui dolorem vero, cumque beatae quibusdam nulla id.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, repellat reprehenderit deserunt ab non dolorem omnis labore ut illo magni doloribus libero dolorum nam aliquam necessitatibus recusandae eius consectetur nemo.</p>
+                            </aside>
                 </section>
-            
-                <aside>
-            
-                </aside>
-    </div>
-    <footer></footer>
+               
+
+              
+
+                <div class="info-container">
+                        <div class="info-main">
+                            <h3>Contactenos</h3>
+                            <p>Cualquier Informacion de Diseño y creacion de paginas web, encontraras mas informacion dando clik en el enlace que se encuentra en la parte inferior. con mucho gusto te atenderemos y orientamos en el proceso.</p>
+                            <a href="Secciones/Autores/Autores.html">Mas Informacion</a>
+                        </div>
+                    </div>
+                    
+                    <footer>
+                        <div class="footer-container">
+                            <div class="footer-main">
+                                <div class="footer-columna">
+                                    <h3>Suscríbete</h3>
+                                    <input type="email" placeholder="Escriba su Correo">
+                                    <input type="submit" value=" Suscribirse">
+                                </div>
+                
+                                <div class="footer-columna">
+                                    <h3>Dirección</h3>
+                                    <span class="fa fa-map-marker"><p>Aguachica Cesar  - Colombia</p></span>
+                                                        <span class="fa fa-phone"><p>(+57) 3156751267</p></span>                                        
+                                                        <span class="fa fa-envelope"><p>Orlando-Amado@hotmail.com</p></span>
+                                                        <span class="fa fa-envelope"><p> parse2483@hotmail.com</p></span>
+                                </div>
+                
+                                <div class="footer-columna">
+                                    <h3>Sobre Nosotros</h3>
+                                    <p>Somos estudiantes de Ingieneria en sistema de la universidad nacional abierta y a distancia, del curso de Diseño de sitio Web.</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="footer-copy-redes">
+                            <div class="main-copy-redes">
+                                <div class="footer-copy">
+                                    &copy; 2019, Todos los derechos reservados 
+                                </div>
+                                <div class="footer-redes">
+                                    <a href="#" class="fa fa-facebook"></a>
+                                    <a href="#" class="fa fa-twitter"></a>
+                                    <a href="#" class="fa fa-youtube-play"></a>
+                                    <a href="#" class="fa fa-github"></a>
+                                </div>
+                            </div>
+                        </div>
+
+        </div>
+
+        <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "navegacion") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "navegacion";
+                  }
+                }
+        </script>
+
+        
+                  
+   
 
 </body>
 
