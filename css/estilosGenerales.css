@@ -67,137 +67,100 @@ body{
   display: flex;
   background: #333333;
   flex: auto;
-  margin-bottom: 2px;
-}
-.menu > li{
+  margin-bottom: 1.5px;
   
+}
+.menu{
   display: flex;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 25px;
-  border-right: 2px solid rgba(0,0,0,.2);
-  transition: all .5s;
   flex: auto;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-  }
 
-  /* para darle formato al ultimo li */
- .menu li:last-child{
-  border-right: none;
-  }
-  .menu >li:hover{
-    background-color: green;
-    
-  }
-
-  .menu >li:hover .subMenu{
-    transform: translateX(0%);
-    opacity: 1;
-    transition: all .6s;
-    
-  }
-
-  .menu a:hover{
-    color: blueviolet;       
-      
-  }
+}
 
 .menu a{
   text-decoration: none;
-  font-size: 1.5rem;
   color: rgb(0, 255, 42); 
-  display: block;
+  font-size: 1.5rem;
 }
 
-.menu >li>a img{
+.menu a:hover{
+         
+    color: azure;
+}
+
+
+
+.menu > li{  
+  flex: auto;
+  position: relative;
+  padding: 12px 25px;
+  border-right: 2px solid rgba(0,0,0,.2);
+  transition: all .5s;    
+  text-align: center;
+  cursor: pointer;
+  
+  }
+  .menu li:last-child{
+    border-right: none;
+    }
+
+    .menu li:hover{
+      background-color: greenyellow;
+    }
+
+    
+
+    .menu >li>a img{
+      float: right;
+      position: relative;
+      margin-right: 0;    
+      
+    }
+
+/* configuracion del submenu */
+
+.lista > .subMenu{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  text-align: left;  
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  visibility: visible;
+  /* padding: 5px 0; */
+  /* margin: 3px 0 20px; */
+  /* display: none; */  
+  font-size: 14px;  
+  background-color:  #222;     
+  /* background-clip: padding-box;  */
+  width: 150%; 
+ 
+}
+
+.lista > .subMenu li{
+  flex: auto;
+  position: relative;
+  padding: 8px 25px;
+  border-top: 4px solid rgba(0,0,0,.1);
+  cursor: pointer;
+}
+
+ 
+.lista > .subMenu li a img{
   float: right;
   position: relative;
   margin-right: 0;    
   
 }
 
-/* configuracion del submenu */
-.subMenu{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 100%;    
-  transform: translateX(60%);
-  opacity: 0;
-  transition: all .6s;
-  
-  
-}
-
-.subMenu >li{
-  display: block;
- width: 150%; 
- background-color:  #222;
- /* display: block; */
-  overflow: hidden;
-  text-align: left;
-  padding: 12px 25px;
-  border-top: 2px solid rgba(0,0,0,.1);
-  cursor: pointer;
-}
-
-.subMenu >li:hover{  
-  background-color: green;
-  display: block;
+.lista > .subMenu .subMenu{
+display: none;
 }
 
 
 
-.subMenu >li> a img{
-  float: right;
-  position: relative;
-  margin-right: 0;  
-  margin-left: 10px;
-    
-}
 
 
-
-/* configurar el sub sub menu */
-
-.subSubMenu{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  left: 166%;
-  top: 0;  
-  background-color: #222; 
-  transform: translateX(-60%);
-  opacity: 0;
-  transition: all .6s;
-  
-}
-.subSubMenu > li{
-  width: 200%; 
-  background-color:  #222;  
-   overflow: hidden;
-   text-align: left;
-   padding: 12px 25px;
-   border-bottom: 2px solid rgba(0,0,0,.2);
-   cursor: pointer;
- 
- 
-}
-
-.subSubMenu >li:hover{
-  background-color: rgba(0,0,0,.2);
-  background-color: green;
-}
-
-.subMenu >li:hover .subSubMenu{
-  transform: translateX(0%);
-  opacity: 1;
-  transition: all .6s;
-  
-}
 
 /* estilos del footer */
 
