@@ -1,0 +1,5 @@
+.contenidoJuego{
+    display: flex;
+    width: 95%;
+    background-color: red;
+}
