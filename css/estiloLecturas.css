@@ -75,3 +75,27 @@
 .SeccionDefinicion h1{
  text-align: center;
 }
+
+
+#atras{
+  display: flex; 
+  position: absolute;    
+  justify-content: space-between;
+  align-items: center;
+background-color:  rgb(19, 29, 172);
+width: 5%;
+padding: 5px 5px;
+
+margin: 20px auto 25px;
+
+border-radius: 10px ;
+
+left: 6%;
+
+}
+#atras a{     
+  color: rgb(0, 255, 42); 
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
