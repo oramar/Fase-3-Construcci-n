@@ -87,3 +87,20 @@ section >h2{
 
 }
 
+.SeccionDefinicion  dl{
+  text-align: left;
+  padding: 5px 20px;
+}
+
+.SeccionDefinicion  dl dt{
+  font-weight: bold;
+  margin: 2rem 0px 0px;
+}
+
+.SeccionDefinicion p img{
+  display: flex;
+  background-position: left;
+}
+.SeccionDefinicion h1{
+ text-align: center;
+}
